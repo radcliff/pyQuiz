@@ -1,13 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'pyQuiz.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
-)
 urlpatterns = [
+    url(r'^quizzes/', include('quizzes.urls')),
     url(r'^admin/', include(admin.site.urls))
 ]
